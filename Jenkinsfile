@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage ('git checkout'){
             steps{
-                git branch: 'vp-rem', credentialsId: 'GitAuth', url: 'https://github.com/RajMuni-SRRM/vprofile-repo.git'
+                git credentialsId: 'GitAuthone', url: 'https://github.com/RajMuni-SRRM/Hook-Repo.git'
             }
         }
         stage ('Build Artifact'){
